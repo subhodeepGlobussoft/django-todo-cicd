@@ -7,7 +7,7 @@ pipeline
     {
       steps
       {
-        git url: "https://github.com/subhodeepGlobussoft/django-todo-cicd.git",branch: 'develop'
+        git url: "https://github.com/subhodeepGlobussoft/django-todo-cicd.git",branch: 'main'
       }
     }
     stage("build the dockerfile here")
@@ -21,7 +21,7 @@ pipeline
     {
       steps
       {
-        sh 'docker run -d -p 8000:8000 django-todo'
+        sh 'docker run -d -p 8888:8000 django-todo'
       }
     }
   }
