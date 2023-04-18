@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("clone the repo"){
       steps{
-        git url: "https://github.com/subhodeepGlobussoft/django-todo-cicd.git",branch: 'main'
+        git url: "https://github.com/subhodeepGlobussoft/django-todo-cicd.git",branch: 'develop'
       }
     }
     stage("build the dockerfile here"){
