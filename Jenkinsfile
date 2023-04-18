@@ -14,7 +14,7 @@ pipeline
     {
       steps
       {
-        sh 'docker build -t django-todo'
+        sh 'docker build -t django-todo .'
       }
     }
     stage("run the image on port 8000")
